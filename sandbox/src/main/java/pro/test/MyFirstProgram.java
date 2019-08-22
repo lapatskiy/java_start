@@ -9,25 +9,19 @@ public class MyFirstProgram {
         hello("Bob");
         hello("Lucy");
         hello("Ben");
+          // Object//
+        Square s = new Square(5);
 
-        Square s = new Square();
-        s.l = 5;
-        System.out.println("Distance of the square side " + s.l + " = " + area(s));
+        System.out.println("Distance of the square side " + s.l + " = " + s.area());
+         // object //
+        Rectangle r = new Rectangle(4, 6);
 
-        Rectangle r = new Rectangle();
-        r.a = 4;
-        r.b = 6;
-        System.out.println("Distance of the Rectangle with side " + r.a + " and " + r.b + " = " + area(r));
+        System.out.println("Distance of the Rectangle with side " + r.a + " and " + r.b + " = " + r.area());
     }
 
     public static void hello(String somebody) {
         System.out.println("Hello, " + somebody + "!");
     }
-    public static double area(Square s) {
-        return s.l * s.l;
-    }
-    public static double area(Rectangle r) {
-        return r.a * r.b;
-    }
+
 
 }
